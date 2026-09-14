@@ -1,6 +1,6 @@
 namespace Restaurant.Domaine;
 
-public sealed class Commande
+public class Commande
 {
     public Commande(int numero)
     {
