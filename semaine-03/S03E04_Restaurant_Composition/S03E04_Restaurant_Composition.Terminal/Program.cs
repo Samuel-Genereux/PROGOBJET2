@@ -31,7 +31,7 @@ static void AssemblageManuel()
 
     CreerCommande creerCommande = new CreerCommande(depotCommandes, notificationCommande);
 
-    creerCommande.Executer(1);
+    creerCommande.Executer(1001);
 }
 
 static void AssemblageAvecCOnteneur(string[] args)
@@ -48,5 +48,5 @@ static void AssemblageAvecCOnteneur(string[] args)
 
     CreerCommande creerCommande = scope.ServiceProvider.GetRequiredService<CreerCommande>();
 
-    creerCommande.Executer(1);
+    creerCommande.Executer(1001);
 }

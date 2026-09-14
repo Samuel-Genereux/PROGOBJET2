@@ -10,8 +10,8 @@ public class CreerCommandeTests
     public void Executer_NumeroValide_AjoutEtNotificationValide()
     {
         // Arranger
-        DepotCommandesEspion depotCommande = new();
-        NotificationCommandeEspion notificationCommande = new();
+        DepotCommandesEspion depotCommande = new DepotCommandesEspion();
+        NotificationCommandeEspion notificationCommande = new NotificationCommandeEspion();
         CreerCommande creerCommande = new(depotCommande, notificationCommande);
 
         // Agir
