@@ -1,0 +1,143 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\TECHNIQUE\\AUTOMNE_26\\PROG_OBJET\\PROGOBJET2\\semaine-04\\S04E01E03_Restaurant_Qualite\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B0CF86B9-3C68-B3B7-BFCC-72F6081C111E}|S04E01E03_Restaurant_Qualite\\S04E01E03_Restaurant_Qualite.csproj|c:\\technique\\automne_26\\prog_objet\\progobjet2\\semaine-04\\s04e01e03_restaurant_qualite\\s04e01e03_restaurant_qualite\\calculateurtaxe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0CF86B9-3C68-B3B7-BFCC-72F6081C111E}|S04E01E03_Restaurant_Qualite\\S04E01E03_Restaurant_Qualite.csproj|solutionrelative:s04e01e03_restaurant_qualite\\calculateurtaxe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0CF86B9-3C68-B3B7-BFCC-72F6081C111E}|S04E01E03_Restaurant_Qualite\\S04E01E03_Restaurant_Qualite.csproj|c:\\technique\\automne_26\\prog_objet\\progobjet2\\semaine-04\\s04e01e03_restaurant_qualite\\s04e01e03_restaurant_qualite\\servicecommandes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0CF86B9-3C68-B3B7-BFCC-72F6081C111E}|S04E01E03_Restaurant_Qualite\\S04E01E03_Restaurant_Qualite.csproj|solutionrelative:s04e01e03_restaurant_qualite\\servicecommandes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B0ABA95-5C65-2715-8E26-4FA2AB9E3DE2}|S04E01E03_Restaurant_Qualite.Terminal\\S04E01E03_Restaurant_Qualite.Terminal.csproj|c:\\technique\\automne_26\\prog_objet\\progobjet2\\semaine-04\\s04e01e03_restaurant_qualite\\s04e01e03_restaurant_qualite.terminal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B0ABA95-5C65-2715-8E26-4FA2AB9E3DE2}|S04E01E03_Restaurant_Qualite.Terminal\\S04E01E03_Restaurant_Qualite.Terminal.csproj|solutionrelative:s04e01e03_restaurant_qualite.terminal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B62CF81-5B12-E883-FA0C-8423A610C35C}|S04E01E03_Restaurant_Qualite.Tests\\S04E01E03_Restaurant_Qualite.Tests.csproj|c:\\technique\\automne_26\\prog_objet\\progobjet2\\semaine-04\\s04e01e03_restaurant_qualite\\s04e01e03_restaurant_qualite.tests\\restauranttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B62CF81-5B12-E883-FA0C-8423A610C35C}|S04E01E03_Restaurant_Qualite.Tests\\S04E01E03_Restaurant_Qualite.Tests.csproj|solutionrelative:s04e01e03_restaurant_qualite.tests\\restauranttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B62CF81-5B12-E883-FA0C-8423A610C35C}|S04E01E03_Restaurant_Qualite.Tests\\S04E01E03_Restaurant_Qualite.Tests.csproj|c:\\technique\\automne_26\\prog_objet\\progobjet2\\semaine-04\\s04e01e03_restaurant_qualite\\s04e01e03_restaurant_qualite.tests\\notificationcommandeespion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B62CF81-5B12-E883-FA0C-8423A610C35C}|S04E01E03_Restaurant_Qualite.Tests\\S04E01E03_Restaurant_Qualite.Tests.csproj|solutionrelative:s04e01e03_restaurant_qualite.tests\\notificationcommandeespion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0CF86B9-3C68-B3B7-BFCC-72F6081C111E}|S04E01E03_Restaurant_Qualite\\S04E01E03_Restaurant_Qualite.csproj|c:\\technique\\automne_26\\prog_objet\\progobjet2\\semaine-04\\s04e01e03_restaurant_qualite\\s04e01e03_restaurant_qualite\\notificationconsole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0CF86B9-3C68-B3B7-BFCC-72F6081C111E}|S04E01E03_Restaurant_Qualite\\S04E01E03_Restaurant_Qualite.csproj|solutionrelative:s04e01e03_restaurant_qualite\\notificationconsole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0CF86B9-3C68-B3B7-BFCC-72F6081C111E}|S04E01E03_Restaurant_Qualite\\S04E01E03_Restaurant_Qualite.csproj|c:\\technique\\automne_26\\prog_objet\\progobjet2\\semaine-04\\s04e01e03_restaurant_qualite\\s04e01e03_restaurant_qualite\\inotificationcommande.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0CF86B9-3C68-B3B7-BFCC-72F6081C111E}|S04E01E03_Restaurant_Qualite\\S04E01E03_Restaurant_Qualite.csproj|solutionrelative:s04e01e03_restaurant_qualite\\inotificationcommande.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CalculateurTaxe.cs",
+              "DocumentMoniker": "C:\\TECHNIQUE\\AUTOMNE_26\\PROG_OBJET\\PROGOBJET2\\semaine-04\\S04E01E03_Restaurant_Qualite\\S04E01E03_Restaurant_Qualite\\CalculateurTaxe.cs",
+              "RelativeDocumentMoniker": "S04E01E03_Restaurant_Qualite\\CalculateurTaxe.cs",
+              "ToolTip": "C:\\TECHNIQUE\\AUTOMNE_26\\PROG_OBJET\\PROGOBJET2\\semaine-04\\S04E01E03_Restaurant_Qualite\\S04E01E03_Restaurant_Qualite\\CalculateurTaxe.cs",
+              "RelativeToolTip": "S04E01E03_Restaurant_Qualite\\CalculateurTaxe.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-16T15:25:17.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NotificationCommandeEspion.cs",
+              "DocumentMoniker": "C:\\TECHNIQUE\\AUTOMNE_26\\PROG_OBJET\\PROGOBJET2\\semaine-04\\S04E01E03_Restaurant_Qualite\\S04E01E03_Restaurant_Qualite.Tests\\NotificationCommandeEspion.cs",
+              "RelativeDocumentMoniker": "S04E01E03_Restaurant_Qualite.Tests\\NotificationCommandeEspion.cs",
+              "ToolTip": "C:\\TECHNIQUE\\AUTOMNE_26\\PROG_OBJET\\PROGOBJET2\\semaine-04\\S04E01E03_Restaurant_Qualite\\S04E01E03_Restaurant_Qualite.Tests\\NotificationCommandeEspion.cs",
+              "RelativeToolTip": "S04E01E03_Restaurant_Qualite.Tests\\NotificationCommandeEspion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-16T14:18:16.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RestaurantTests.cs",
+              "DocumentMoniker": "C:\\TECHNIQUE\\AUTOMNE_26\\PROG_OBJET\\PROGOBJET2\\semaine-04\\S04E01E03_Restaurant_Qualite\\S04E01E03_Restaurant_Qualite.Tests\\RestaurantTests.cs",
+              "RelativeDocumentMoniker": "S04E01E03_Restaurant_Qualite.Tests\\RestaurantTests.cs",
+              "ToolTip": "C:\\TECHNIQUE\\AUTOMNE_26\\PROG_OBJET\\PROGOBJET2\\semaine-04\\S04E01E03_Restaurant_Qualite\\S04E01E03_Restaurant_Qualite.Tests\\RestaurantTests.cs",
+              "RelativeToolTip": "S04E01E03_Restaurant_Qualite.Tests\\RestaurantTests.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAswBAAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-16T14:16:22.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\TECHNIQUE\\AUTOMNE_26\\PROG_OBJET\\PROGOBJET2\\semaine-04\\S04E01E03_Restaurant_Qualite\\S04E01E03_Restaurant_Qualite.Terminal\\Program.cs",
+              "RelativeDocumentMoniker": "S04E01E03_Restaurant_Qualite.Terminal\\Program.cs",
+              "ToolTip": "C:\\TECHNIQUE\\AUTOMNE_26\\PROG_OBJET\\PROGOBJET2\\semaine-04\\S04E01E03_Restaurant_Qualite\\S04E01E03_Restaurant_Qualite.Terminal\\Program.cs",
+              "RelativeToolTip": "S04E01E03_Restaurant_Qualite.Terminal\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-14T20:04:14.572Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ServiceCommandes.cs",
+              "DocumentMoniker": "C:\\TECHNIQUE\\AUTOMNE_26\\PROG_OBJET\\PROGOBJET2\\semaine-04\\S04E01E03_Restaurant_Qualite\\S04E01E03_Restaurant_Qualite\\ServiceCommandes.cs",
+              "RelativeDocumentMoniker": "S04E01E03_Restaurant_Qualite\\ServiceCommandes.cs",
+              "ToolTip": "C:\\TECHNIQUE\\AUTOMNE_26\\PROG_OBJET\\PROGOBJET2\\semaine-04\\S04E01E03_Restaurant_Qualite\\S04E01E03_Restaurant_Qualite\\ServiceCommandes.cs",
+              "RelativeToolTip": "S04E01E03_Restaurant_Qualite\\ServiceCommandes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-14T19:56:47.124Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NotificationConsole.cs",
+              "DocumentMoniker": "C:\\TECHNIQUE\\AUTOMNE_26\\PROG_OBJET\\PROGOBJET2\\semaine-04\\S04E01E03_Restaurant_Qualite\\S04E01E03_Restaurant_Qualite\\NotificationConsole.cs",
+              "RelativeDocumentMoniker": "S04E01E03_Restaurant_Qualite\\NotificationConsole.cs",
+              "ToolTip": "C:\\TECHNIQUE\\AUTOMNE_26\\PROG_OBJET\\PROGOBJET2\\semaine-04\\S04E01E03_Restaurant_Qualite\\S04E01E03_Restaurant_Qualite\\NotificationConsole.cs",
+              "RelativeToolTip": "S04E01E03_Restaurant_Qualite\\NotificationConsole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-14T19:54:34.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "INotificationCommande.cs",
+              "DocumentMoniker": "C:\\TECHNIQUE\\AUTOMNE_26\\PROG_OBJET\\PROGOBJET2\\semaine-04\\S04E01E03_Restaurant_Qualite\\S04E01E03_Restaurant_Qualite\\INotificationCommande.cs",
+              "RelativeDocumentMoniker": "S04E01E03_Restaurant_Qualite\\INotificationCommande.cs",
+              "ToolTip": "C:\\TECHNIQUE\\AUTOMNE_26\\PROG_OBJET\\PROGOBJET2\\semaine-04\\S04E01E03_Restaurant_Qualite\\S04E01E03_Restaurant_Qualite\\INotificationCommande.cs",
+              "RelativeToolTip": "S04E01E03_Restaurant_Qualite\\INotificationCommande.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-14T19:53:08.273Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

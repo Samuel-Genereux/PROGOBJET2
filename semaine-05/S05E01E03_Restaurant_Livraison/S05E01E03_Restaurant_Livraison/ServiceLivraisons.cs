@@ -8,7 +8,7 @@ public class ServiceLivraisons
         double distanceKm,
         string mode)
     {
-        bool estPrioritaire = client.Statut == "Or" && client.PointsFidelite >= 1000;
+        bool estPrioritaire = client.estPrioritaire();
 
         if (mode == "gratuit" && sousTotal >= 50m)
         {
