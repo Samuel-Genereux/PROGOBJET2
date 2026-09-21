@@ -1,9 +1,26 @@
 namespace Restaurant.Livraison;
 
-public class CalculateurFraisGratuit : CalculateurFrais
+public class CalculateurFraisGratuit : ICalculateurFraisLivraison
 {
-    public override decimal Calculer(decimal sousTotal, double distanceKm)
+    private readonly ICalculateurFraisLivraison _calculateurFrais;
+
+    public CalculateurFraisGratuit(ICalculateurFraisLivraison calculateurStandard)
     {
-        return sousTotal >= 50m ? 0m : base.Calculer(sousTotal, distanceKm);
+        if(calculateurStandard is null)
+            throw new ArgumentNullException("Interface can't be null");
+
+        _calculateurFrais = calculateurStandard;
+    }
+
+    public decimal Calculer(decimal sousTotal, double distanceKm)
+    {
+        if (sousTotal >= 50m)
+        {
+            return 0m;
+        }
+        else
+        {
+            return _calculateurFrais.Calculer(sousTotal, distanceKm);
+        }
     }
 }
