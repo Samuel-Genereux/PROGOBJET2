@@ -4,7 +4,7 @@ public class ServiceCommandes
 {
     private Commande? m_derniereCommande;
     private readonly INotificationCommande m_notificationCommande;
-    public ServiceCommandes(INotificationCommande notificationCommande)
+    public ServiceCommandes(INotificationCommande notificationCommande, CalculateurTaxe calculateurTaxe)
     {
         if (notificationCommande is null)
             throw new ArgumentNullException("INotificationCommande can't be null");

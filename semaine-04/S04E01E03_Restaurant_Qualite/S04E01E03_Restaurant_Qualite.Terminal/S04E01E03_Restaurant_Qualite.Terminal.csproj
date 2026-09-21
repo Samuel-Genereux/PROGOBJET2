@@ -7,6 +7,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="Moq" Version="4.20.72" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\S04E01E03_Restaurant_Qualite\S04E01E03_Restaurant_Qualite.csproj" />
   </ItemGroup>
 </Project>
