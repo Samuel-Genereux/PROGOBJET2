@@ -178,14 +178,7 @@ public partial class FormContacts : Form
 
         dgvContacts.DataSource = contacts.ToArray();
 
-        if (contacts.Count == 0)
-        {
-            lNombre.Text = "Aucun résultat";
-        }
-        else
-        {
-            lNombre.Text = contacts.Count + " Contact(s)";
-        }
+        lNombre.Text = contacts.Count + " Contact(s)";
     }
 
     private void SignalerIncident(string operation, Exception exception)
