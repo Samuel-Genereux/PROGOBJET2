@@ -22,7 +22,8 @@ public sealed class FormFacture : Form, IObservateurCommande
         m_resume.AccessibleName = "Résumé de facture";
         Controls.Add(m_resume);
         Actualiser(modele.Consulter());
-        m_abonnement = null; // À compléter : conserver l’abonnement.
+        m_abonnement = modele.Attacher(this); ; // À compléter : conserver l’abonnement.
+        
     }
 
     public void Actualiser(EtatCommandeDto etat)

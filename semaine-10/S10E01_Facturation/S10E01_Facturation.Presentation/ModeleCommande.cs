@@ -9,6 +9,7 @@ public sealed class ModeleCommande
     private readonly ServiceCommandes m_commandes;
     private readonly ServiceFacturation m_facturation;
     private readonly IJournalIncidents m_journal;
+    private readonly List<IObservateurCommande> m_observateurs = new();
 
     public ModeleCommande(ServiceCommandes commandes, ServiceFacturation facturation,
         IJournalIncidents journal)
@@ -30,26 +31,56 @@ public sealed class ModeleCommande
     {
         return m_commandes.ConsulterProduits();
     }
-
+  
     // À implanter : contrat détaillé dans l'énoncé.
     public IDisposable Attacher(IObservateurCommande observateur)
     {
         ArgumentNullException.ThrowIfNull(observateur);
-        throw new NotImplementedException("Implanter l'abonnement explicite.");
+      
+        m_observateurs.Add(observateur);
+        return new AbonnementCommande(m_observateurs, observateur);
     }
 
     public Result<CommandeDto> Nouvelle(int numero)
     {
-        throw new NotImplementedException("Appeler le service et publier seulement en succès.");
+        Result<CommandeDto> resultat = m_commandes.Creer(numero);
+        if (resultat.EstSucces)
+        {
+            Publier();
+        }
+
+        return resultat;
     }
 
     public Result<CommandeDto> Ajouter(int numeroProduit, int quantite)
     {
-        throw new NotImplementedException("Appeler le service et publier seulement en succès.");
+        Result<CommandeDto> resultat = m_commandes.AjouterProduit(numeroProduit, quantite);
+        if (resultat.EstSucces)
+        {
+            Publier();
+        }
+
+        return resultat;
     }
 
     public Result<CommandeDto> Enregistrer()
     {
-        throw new NotImplementedException("Distinguer succès, refus et incident.");
+        Result<CommandeDto> resultat = m_commandes.Enregistrer();
+        if (resultat.EstSucces)
+        {
+            Publier();
+        }
+
+        return resultat;
+    }
+
+    public void Publier()
+    {
+        EtatCommandeDto etat = Consulter();
+        IObservateurCommande[] observateurs = m_observateurs.ToArray();
+        foreach (IObservateurCommande observateur in observateurs)
+        {
+            observateur.Actualiser(etat);
+        }
     }
 }
