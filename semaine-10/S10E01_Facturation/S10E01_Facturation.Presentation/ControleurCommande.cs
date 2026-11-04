@@ -1,3 +1,4 @@
+using System.Text.Json;
 using Commandes.Application;
 
 namespace Commandes.Presentation;
@@ -7,54 +8,84 @@ public sealed class ControleurCommande : IDisposable
     private readonly ModeleCommande m_modele;
     private readonly IVueCommande m_vue;
     private readonly IJournalIncidents m_journal;
-    private IDisposable m_abonnement;
+    private readonly IDisposable m_abonnement;
+    private bool m_estDispose;
 
     public ControleurCommande(ModeleCommande modele, IVueCommande vue, IJournalIncidents journal)
     {
         ArgumentNullException.ThrowIfNull(modele);
         ArgumentNullException.ThrowIfNull(vue);
         ArgumentNullException.ThrowIfNull(journal);
-        // À compléter : collaborateurs, abonnement et affichage initial.
         m_modele = modele;
         m_vue = vue;
         m_journal = journal;
-        m_vue.Actualiser(m_modele.Consulter());
-        m_abonnement = m_modele.Attacher(m_vue);
+        m_abonnement = modele.Subscribe(vue);
+        try
+        {
+            vue.OnNext(modele.Consulter());
+        }
+        catch
+        {
+            m_abonnement.Dispose();
+            throw;
+        }
     }
 
     public void Nouvelle(int numero)
     {
-        Result<CommandeDto> resultat = m_modele.Nouvelle(numero);
-        if (!resultat.EstSucces)
-        {
-            m_vue.PresenterRefus(resultat.MessageErreur);
-        }
+        Executer(() => m_modele.Nouvelle(numero), "nouvelle commande");
     }
 
     public void Ajouter(int numeroProduit, int quantite)
     {
-        Result<CommandeDto> resultat = m_modele.Ajouter(numeroProduit, quantite);
-        if (!resultat.EstSucces)
-        {
-            m_vue.PresenterRefus(resultat.MessageErreur);
-        }
+        Executer(() => m_modele.Ajouter(numeroProduit, quantite), "ajouter produit");
     }
 
     public void Enregistrer()
     {
-        Result<CommandeDto> resultat = m_modele.Enregistrer();
-        if (!resultat.EstSucces)
+        Executer(m_modele.Enregistrer, "enregistrer commande");
+    }
+
+    private void Executer(Func<Result<CommandeDto>> action, string operation)
+    {
+        ObjectDisposedException.ThrowIf(m_estDispose, this);
+        try
         {
-            m_vue.PresenterRefus(resultat.MessageErreur);
+            Result<CommandeDto> resultat = action();
+            if (!resultat.EstSucces)
+            {
+                m_vue.PresenterRefus(resultat.MessageErreur);
+            }
+            // Le modèle a déjà notifié les vues en succès : pas de second affichage.
+        }
+        catch (IOException exception)
+        {
+            m_journal.Consigner(operation, exception);
+            m_vue.PresenterIncident("Action impossible pour le moment. Vos lignes sont conservées.");
+        }
+        catch (InvalidDataException exception)
+        {
+            m_journal.Consigner(operation, exception);
+            m_vue.PresenterIncident("Action impossible pour le moment. Vos lignes sont conservées.");
+        }
+        catch (UnauthorizedAccessException exception)
+        {
+            m_journal.Consigner(operation, exception);
+            m_vue.PresenterIncident("Action impossible pour le moment. Vos lignes sont conservées.");
+        }
+        catch (JsonException exception)
+        {
+            m_journal.Consigner(operation, exception);
+            m_vue.PresenterIncident("Action impossible pour le moment. Vos lignes sont conservées.");
         }
     }
 
     public void Dispose()
     {
-        if (m_abonnement is not null)
+        if (!m_estDispose)
         {
             m_abonnement.Dispose();
-            m_abonnement = null;
+            m_estDispose = true;
         }
     }
 }
